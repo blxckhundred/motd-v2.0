@@ -422,7 +422,7 @@ safe_cmd() {
 show_logo() {
     if [[ "${SHOW_LOGO}" = "true" ]] && [[ -x "${TOILET}" ]]; then
         echo -e "${COLOR_TITLE}"
-        "${TOILET}" -f standard "distillium" 2>/dev/null || echo "distillium"
+        "${TOILET}" -f standard "blxckhundred" 2>/dev/null || echo "blxckhundred"
         echo -e "${RESET}"
     fi
 }
@@ -937,7 +937,7 @@ configure_motd_display() {
     
     CHOICES=$("${WHIPTAIL}" --title "MOTD Display Settings" --checklist \
     "Выберите, что отображать в MOTD:" 20 70 10 \
-    "SHOW_LOGO" "Логотип distillium" "$(check_setting 'SHOW_LOGO')" \
+    "SHOW_LOGO" "Логотип blxckhundred" "$(check_setting 'SHOW_LOGO')" \
     "SHOW_CPU" "Загрузка процессора" "$(check_setting 'SHOW_CPU')" \
     "SHOW_MEM" "Память и диск" "$(check_setting 'SHOW_MEM')" \
     "SHOW_NET" "Сетевой трафик" "$(check_setting 'SHOW_NET')" \
