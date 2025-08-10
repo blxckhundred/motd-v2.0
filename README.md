@@ -30,6 +30,10 @@
 ```
 curl -fsSL https://raw.githubusercontent.com/blxckhundred/motd-v2.0/refs/heads/main/install-motd.sh | bash
 ```
+or
+```
+curl -fsSL https://raw.githubusercontent.com/blxckhundred/motd-v2.0/refs/heads/main/install-motd.sh | sudo bash
+```
 
 ## Для удаления используйте:
 `motd-set` и выберите соответсвующий пункт
